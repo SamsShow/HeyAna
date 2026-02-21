@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/shared/ThemeToggle";
 import {
@@ -37,9 +38,13 @@ export function DashboardSidebar() {
       {/* Logo */}
       <div className="p-6 border-b border-border">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-red-primary flex items-center justify-center glow-red">
-            <span className="text-white font-bold text-sm font-mono">H</span>
-          </div>
+          <Image
+            src="/heyanalogo.svg"
+            alt="HeyAna logo"
+            width={32}
+            height={32}
+            className="w-8 h-8 rounded-lg glow-red"
+          />
           <span className="text-lg font-bold tracking-tight">
             Hey<span className="text-red-primary">Ana</span>
           </span>
@@ -117,9 +122,13 @@ export function DashboardMobileHeader() {
   return (
     <div className="lg:hidden fixed top-0 left-0 right-0 z-50 h-14 border-b border-border bg-background/80 backdrop-blur-xl flex items-center justify-between px-4">
       <Link href="/" className="flex items-center gap-2">
-        <div className="w-7 h-7 rounded-lg bg-red-primary flex items-center justify-center">
-          <span className="text-white font-bold text-xs font-mono">H</span>
-        </div>
+        <Image
+          src="/heyanalogo.svg"
+          alt="HeyAna logo"
+          width={28}
+          height={28}
+          className="w-7 h-7 rounded-lg"
+        />
         <span className="text-base font-bold">
           Hey<span className="text-red-primary">Ana</span>
         </span>

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   ArrowRight,
@@ -57,9 +58,13 @@ export default function OnboardingPage() {
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-red-primary flex items-center justify-center glow-red">
-              <span className="text-white font-bold text-sm font-mono">H</span>
-            </div>
+            <Image
+              src="/heyanalogo.svg"
+              alt="HeyAna logo"
+              width={32}
+              height={32}
+              className="w-8 h-8 rounded-lg glow-red"
+            />
             <span className="text-lg font-bold">
               Hey<span className="text-red-primary">Ana</span>
             </span>
