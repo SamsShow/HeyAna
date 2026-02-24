@@ -21,13 +21,13 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "HeyAna — AI-Powered Trade Copying for Prediction Markets",
+  title: "HeyAnna — AI-Powered Trade Copying for Prediction Markets",
   description: "The smartest way to copy trades on Kalshi prediction markets. AI-powered insights, configurable risk, and cross-platform execution.",
   keywords: ["prediction markets", "trade copying", "Kalshi", "AI trading", "HeyAna"],
   icons: {
-    icon: "/heyanalogo.svg",
-    shortcut: "/heyanalogo.svg",
-    apple: "/heyanalogo.svg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logoo.png",
   },
 };
 
