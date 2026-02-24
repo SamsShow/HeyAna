@@ -29,23 +29,23 @@ export default function Home() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex items-center gap-4"
+          className="flex items-center"
         >
           {/* Logo */}
           <Image
-            src="/heyanna1 1.png"
+            src="/logoo.png"
             alt="HeyAnna Logo"
-            width={96}
-            height={96}
+            width={120}
+            height={120}
             className="rounded-sm"
             style={{ imageRendering: "pixelated" }}
           />
           {/* Brand Name */}
           <h1
-            className="text-5xl md:text-6xl font-light tracking-wide"
-            style={{ color: "#e8dcc8", fontFamily: "var(--font-geist-sans), system-ui, sans-serif" }}
+            className="text-5xl md:text-7xl font-normal tracking-wide"
+            style={{ color: "#e8dcc8", fontFamily: "'Hiragino Kaku Gothic Pro', 'Hiragino Sans', sans-serif" }}
           >
-            heyanna
+            HeyAnna
           </h1>
         </motion.div>
 
@@ -53,8 +53,8 @@ export default function Home() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
-          className="text-xl md:text-2xl font-light tracking-widest mt-2"
-          style={{ color: "#c9bdaa" }}
+          className="text-2xl md:text-3xl font-normal tracking-wide text-center w-full"
+          style={{ color: "#c9bdaa", fontFamily: "'Hiragino Kaku Gothic Pro', 'Hiragino Sans', sans-serif", transform: "translateX(20px)" }}
         >
           Coming Soon
         </motion.p>
@@ -68,8 +68,16 @@ export default function Home() {
         className="absolute bottom-8 z-10 flex items-center gap-3 text-sm tracking-wide"
         style={{ color: "#a09888" }}
       >
-        <a href="https://x.com/tryheyanna" target="_blank" rel="noopener noreferrer" className="hover:text-[#e8dcc8] transition-colors duration-300">
-          X
+        <a
+          href="https://x.com/tryheyanna"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X (Twitter)"
+          className="hover:text-[#e8dcc8] transition-colors duration-300"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" className="w-4 h-4 fill-current">
+            <path d="M18.901 1.153h3.68l-8.04 9.188L24 22.847h-7.406l-5.8-7.584-6.633 7.584H.48l8.6-9.83L0 1.154h7.594l5.242 6.932zM17.61 20.645h2.039L6.486 3.24H4.298z" />
+          </svg>
         </a>
         <span>•</span>
         <a href="#" className="hover:text-[#e8dcc8] transition-colors duration-300">

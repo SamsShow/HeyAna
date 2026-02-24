@@ -53,7 +53,17 @@ export function Footer() {
             <ul className="space-y-2">
               <li><span className="text-sm text-muted hover:text-foreground transition-colors cursor-default">Documentation</span></li>
               <li><span className="text-sm text-muted hover:text-foreground transition-colors cursor-default">Discord</span></li>
-              <li><span className="text-sm text-muted hover:text-foreground transition-colors cursor-default">Twitter / X</span></li>
+              <li>
+                <span className="inline-flex items-center text-sm text-muted hover:text-foreground transition-colors cursor-default" aria-label="X">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" className="w-5 h-5">
+                    <rect x="0" y="0" width="24" height="24" rx="4" fill="#000000" />
+                    <path
+                      d="M18.901 3.153h2.68l-5.84 6.674L22 20.847h-5.406l-4.8-6.284-5.5 6.284H3.52l6.24-7.13L3 3.154h5.594l4.242 5.632zM17.11 18.845h1.239L7.486 5.04H6.298z"
+                      fill="#FFFFFF"
+                    />
+                  </svg>
+                </span>
+              </li>
               <li><span className="text-sm text-muted hover:text-foreground transition-colors cursor-default">GitHub</span></li>
             </ul>
           </div>
