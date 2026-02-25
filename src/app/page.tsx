@@ -12,7 +12,7 @@ export default function Home() {
         <img
           src="/Image Result.gif"
           alt="Background"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-[62%_center] sm:object-center"
         />
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/30" />
